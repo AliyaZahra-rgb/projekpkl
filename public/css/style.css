@@ -1,0 +1,21 @@
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #4f46e5, #6366f1);
+    color: white;
+}
+
+/* Pricing Card Highlight */
+#pricing .card.border-primary {
+    border-width: 2px;
+}
+
+/* Feature Box Hover Effect */
+.feature-box:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}

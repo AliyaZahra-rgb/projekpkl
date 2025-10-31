@@ -1,0 +1,208 @@
+/* RESET DASAR */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6; /* Latar belakang halaman */
+}
+
+/* CONTAINER DASHBOARD */
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ================== SIDEBAR STYLING ================== */
+.sidebar {
+    width: 250px;
+    background-color: #333940; /* Warna gelap untuk sidebar */
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* FOTO USER PROFILE */
+.user-profile {
+    text-align: center;
+    padding: 0 20px 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+}
+
+.user-photo .fas {
+    font-size: 80px; /* Ukuran icon placeholder */
+    color: #888; 
+    border: 3px solid #666;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.user-name {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.user-title {
+    font-size: 0.8em;
+    color: #aaa;
+}
+
+/* MENU NAVIGASI */
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav li a {
+    display: block;
+    color: #f0f0f0;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar-nav li a:hover {
+    background-color: #444c56;
+}
+
+.sidebar-nav li.active a {
+    background: linear-gradient(to right, #4c66ff, #00c6ff); /* Gradient warna aktif */
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(76, 102, 255, 0.5);
+}
+
+.sidebar-nav i {
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+
+/* ================== MAIN CONTENT STYLING ================== */
+.main-content {
+    flex-grow: 1;
+    padding: 40px;
+    background-color: #fff; /* Latar belakang konten utama */
+}
+
+/* HEADER UTAMA */
+.content-header {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.content-header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.content-header p {
+    color: #888;
+    margin: 5px 0 0;
+}
+
+.date-filter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f0f0f0;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: #555;
+    font-size: 0.9em;
+}
+
+.date-filter i {
+    margin-right: 5px;
+}
+
+/* DATA LIST / TABLE */
+.content-list-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+}
+
+.data-table th, .data-table td {
+    padding: 15px 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.data-table th {
+    background-color: #f7f7f7;
+    color: #666;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 0.85em;
+}
+
+/* BARIS DATA AKTIF (Seperti di gambar) */
+.data-row.active-row {
+    background-color: #e6f0ff; /* Warna highlight */
+    color: #004d99;
+    font-weight: 500;
+}
+
+.data-row.active-row td {
+    border-bottom-color: #cce0ff;
+}
+
+/* AVATAR KECIL */
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+    /* Anda harus menyediakan gambar user-placeholder.png atau ganti dengan icon/div */
+}
+
+/* STATUS TAGS */
+.status {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.status.pending {
+    background-color: #fce4ec;
+    color: #d81b60;
+}
+
+.status.dispatch {
+    background-color: #e8f5e9;
+    color: #43a047;
+}
+
+.status.completed {
+    background-color: #e3f2fd;
+    color: #1e88e5;
+}
+
+/* Ikon Aksi */
+.data-table .fas.fa-cogs {
+    cursor: pointer;
+    color: #888;
+    font-size: 1.1em;
+}
+
+/* OVERRIDE WARNA UNTUK ROW AKTIF (Opsional, untuk mencocokkan gradient di gambar) */
+.data-row.active-row .status.dispatch {
+    background-color: #4c66ff;
+    color: #fff;
+}
+.data-row.active-row td {
+    color: inherit; /* agar teks tetap gelap atau sesuai warna row aktif */
+}
